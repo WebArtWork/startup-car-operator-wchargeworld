@@ -1,0 +1,87 @@
+.land-articles {
+	padding: var(--s-lsection);
+    box-shadow: 0 0 8px #868686;
+    position: relative;
+    &_in {
+		width: 100%;
+		max-width: 1360px;
+		margin: auto;
+		text-align: center;
+    }
+}
+
+.land-articles-item {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(53, 184, 190, 0.15);
+	border-radius: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    overflow: hidden;
+    outline: 0;
+    &:hover {
+    	border-color: rgba(53, 184, 190, 1);
+    }
+    &_top {
+    	position: relative;
+    	height: 220px;
+    	border-radius: 12px;
+    }
+    img {
+    	position: absolute;
+    	width: 100%;
+    	height: 100%;
+    	top: 0;
+    	left: 0;
+    	border-radius: 12px;
+    	object-fit: cover;
+    }
+    h3 {
+		text-align: center;
+		position: relative;
+	    margin: 0;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	border-radius: 12px;
+    	background: rgba(0, 0, 0, 0.4);
+    	color: #ffffff;
+    	font-family: $ff-title;
+    	font-weight: 500;
+    	text-shadow: 1px 1px 3px #000000;
+    	line-height: 1.6;
+    	padding: 20px;
+	    transition: background 0.2s ease;
+    }
+	p {
+	    display: -webkit-box;
+	    width: 100%;
+	    -webkit-line-clamp: 3;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    padding-top: 0;
+	    margin-bottom: 20px;
+	    color: var(--c-text);
+	    font-size: 16px;
+	    width: 100%;
+	    text-align: left;
+	    transition: color 0.2s ease;
+	}
+	&:hover {
+		p {
+			color: var(--c-text-d);
+		}
+		h3 {
+    		background: rgba(0, 0, 0, 0.7);
+		}
+	}
+}
+.owl-carousel .owl-stage-outer {
+	padding: 10px 3px;
+}

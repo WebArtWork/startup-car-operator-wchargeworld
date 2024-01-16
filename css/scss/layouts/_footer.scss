@@ -1,0 +1,99 @@
+.footer-wrapper {
+    background-color: #f5fbfc;
+    padding: var(--s-lsection);
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,.04);
+    position: relative;
+    z-index: 1;
+}
+.footer {
+    width: 100%;
+    max-width: 1360px;
+    padding: 20px 0;
+    margin: auto;
+    display: inline-grid;
+    grid-template-areas: "logo links"
+    "copy socials";
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    @include bp-max(sm) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo"
+        "links"
+        "copy"
+        "socials";
+        }
+    &_logo {
+        grid-area: logo;
+        img {
+            width: 280px;
+        }
+        @include bp-max(sm) {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    &_links {
+        grid-area: links;
+    }
+    &_socials {
+        grid-area: socials;
+        text-align: right;
+        border-top: 1px solid rgba(126, 130, 143, 0.09);
+        margin-top: 30px;
+        padding-top: 30px;
+        img {
+            width: 32px;
+        }
+        @include bp-max(sm) {
+            text-align: center;
+        }
+    }
+    &_copy {
+        grid-area: copy;
+        border-top: 1px solid rgba(126, 130, 143, 0.09);
+        margin-top: 30px;
+        padding-top: 30px;
+        @include bp-max(sm) {
+            text-align: center;
+        }
+    }
+}
+.footer-links-title {
+    margin-bottom: 30px;
+    color: #08090a;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    @include bp-max(sm) {
+        text-align: center;
+    }
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+.footer-link {
+    color: #546285;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    &:hover {
+        color: #08090a;
+    }
+    @include bp-max(sm) {
+        text-align: center;
+    }
+}
+.footer-social {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    &:hover {
+        opacity: 1;
+    }
+}

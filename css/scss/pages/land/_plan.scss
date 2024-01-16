@@ -1,0 +1,25 @@
+.land-plan {
+	padding: var(--s-lsection) 0;
+	background-image: url(https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/vdw3fdnjrjqyxxscep5n);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+}
+.land-plan-text {
+	padding: var(--s-lsection);
+	background: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	&_in {
+		text-align: left;
+		display: inline-block;
+	    width: 100%;
+	    max-width: 1360px;
+	    margin: auto;
+	}
+}

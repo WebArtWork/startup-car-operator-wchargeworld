@@ -1,0 +1,7 @@
+.wiki-btns {
+	text-align: center;
+	padding: var(--s-lsection);
+	.btn+.btn {
+		margin-left: 30px;
+	}
+}

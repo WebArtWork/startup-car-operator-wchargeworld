@@ -1,0 +1,43 @@
+.land-map {
+	position: relative;
+	overflow: hidden;
+	background-image: url(https://i.stack.imgur.com/HILmr.png);
+	min-height: 50vh;
+	text-align: center;
+	h1 {
+	    margin-bottom: 20px;
+	    color: #35b8be;
+	    font-size: 55px;
+	    line-height: 1;
+	    font-weight: 700;
+	    letter-spacing: -0.03em;
+	    margin-top: 5px;
+	    text-align: center;
+	    font-family: $ff-title;
+	}
+	p {
+	    font-size: 18px;
+	    line-height: 1.5;
+	    letter-spacing: -0.02em;
+	    text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 40px;
+	}
+}
+
+.land-map-inner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	@include flexBox(flex, null, center, center, null);
+	padding: var(--s-lsection);
+	background: rgba(0, 0, 0, 0.8);
+	&_text {
+		color: #fff;
+		max-width: 680px;
+	    padding: 15px 25px;
+	    border-radius: 8px;
+	}
+}

@@ -1,0 +1,7 @@
+@mixin flexBox ($display: null, $row:null, $jc: null, $ai: null, $wrap: null) {
+    display: $display;
+	flex-direction: $row;
+	justify-content: $jc;
+	align-items: $ai;
+	flex-wrap: $wrap;
+}

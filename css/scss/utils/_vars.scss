@@ -1,0 +1,38 @@
+
+/* font family */
+$ff-base: "Inter",
+sans-serif;
+$ff-title: "Literata",
+serif;
+$ff-second: 'Inter',
+sans-serif;
+
+/* font-size */
+$fs: 20px;
+
+
+// ===== COLORS ===== 
+$blue: #334D6E;
+$sky: #3498DB;
+$skyL: #58ACF5;
+$grey: #BDBDBD;
+$greyL: #F2F2F2;
+$red: #A31010;
+$redD: #8C1B0F;
+$green: #089227;
+$white: #fff;
+$black: #000;
+$dark: #000;
+
+// new
+html {
+ --c-topbar: #35b8be;
+ --c-main: #35b8be;
+ --c-main-d: #1b9097;
+ --c-text: #546285;
+ --c-text-d: #08090a;
+ --c-bg-l: #f5fbfc;
+ --c-text-w: #ffffff;
+
+ --s-lsection: 30px;
+}

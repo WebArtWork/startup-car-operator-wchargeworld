@@ -1,0 +1,12 @@
+h1, h2, h3, h4, h5 {
+	font-family: $ff-title;
+	font-weight: 500;
+}
+a {
+	color: var(--c-main);
+	transition: color 0.2s ease;
+	text-decoration: none;
+	&:hover {
+		color: var(--c-main-d);
+	}
+}

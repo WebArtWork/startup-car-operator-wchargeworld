@@ -1,0 +1,92 @@
+<div class="header-section">
+	<h1>Довідка</h1>
+</div>
+<div class="wiki-wrapper">
+	<div class="breadcrumbs">
+		<a href="/">Початок</a>
+		<span class="breadcrumbs_divider">/</span>
+		<span>Довідка</span>
+	</div>
+	<div class="wiki-btns">
+		<button class="btn _primary" id="wikiUserBtn">Користувачу</button>
+		<button class="btn" id="wikiPartnerBtn">Партнеру</button>
+		<button class="btn" id="wikiFaqBtn">FAQ</button>
+		<button class="btn" id="wikiApiBtn">API</button>
+	</div>
+	<div id="wikiUser">
+		<a href="/">How to 1</a><br><br>
+		<a href="/">How to 2</a><br><br>
+		<a href="/">How to 3</a><br><br>
+		<a href="/">How to 4</a>
+	</div>
+	<div  id="wikiPartner">
+		<a href="/">Partner to 1</a><br><br>
+		<a href="/">Partner to 2</a><br><br>
+		<a href="/">Partner to 3</a><br><br>
+		<a href="/">Partner to 4</a>
+	</div>
+	<div id="wikiFaq">
+		<div class="wiki-acords">
+			<div class="wiki-acord">
+				<div class="wiki-acord_top">
+					<div>Використовуйте офіційні зарядні станції?</div>
+					<i data-feather="chevron-down"></i>
+				</div>
+				<div class="wiki-acord_body">
+					Рекомендується заряджати електромобіль на офіційних зарядних станціях, які підтримують стандарти зарядки, такі як CHAdeMO, CCS або Tesla Supercharger. Вони забезпечують найефективнішу зарядку та дозволяють уникнути проблем з сумісністю.</div>
+			</div>
+			<div class="wiki-acord">
+				<div class="wiki-acord_top">
+					<div>Керуйте частотою зарядки?</div>
+					<i data-feather="chevron-down"></i>
+				</div>
+				<div class="wiki-acord_body">
+					Заряджайте свій електромобіль регулярно, особливо якщо маєте можливість заряджати його вдома або на роботі. Часта зарядка на низькому рівні зберігання допомагає підтримувати оптимальний стан батареї.</div>
+			</div>
+		</div>
+	</div>
+	<div id="wikiApi">
+		API instruction
+	</div>
+</div>
+<script>
+	$('.wiki-btns').on('click', '.btn', function() {
+		$(this).addClass('_primary').siblings().removeClass('_primary');
+	});
+	// $('.wiki-acords').on('click', '.wiki-acord', function() {
+	// 	$(this).addClass('_active').siblings().removeClass('_active');
+	// });
+	$('.wiki-acord_top').click(function() {
+		$(this).toggleClass("_active")
+	});
+	$( document ).ready(function() {
+	    $('#wikiUser').show();
+	    $('#wikiPartner').hide();
+	    $('#wikiFaq').hide();
+	    $('#wikiApi').hide();
+	});
+	$('#wikiUserBtn').click(function(){
+	    $('#wikiUser').show();
+	    $('#wikiPartner').hide();
+	    $('#wikiFaq').hide();
+	    $('#wikiApi').hide();
+	});
+	$('#wikiPartnerBtn').click(function(){
+	    $('#wikiUser').hide();
+	    $('#wikiPartner').show();
+	    $('#wikiFaq').hide();
+	    $('#wikiApi').hide();
+	});
+	$('#wikiFaqBtn').click(function(){
+	    $('#wikiUser').hide();
+	    $('#wikiPartner').hide();
+	    $('#wikiFaq').show();
+	    $('#wikiApi').hide();
+	});
+	$('#wikiApiBtn').click(function(){
+	    $('#wikiUser').hide();
+	    $('#wikiPartner').hide();
+	    $('#wikiFaq').hide();
+	    $('#wikiApi').show();
+	});
+</script>

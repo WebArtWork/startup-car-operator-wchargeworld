@@ -1,0 +1,33 @@
+{
+	"name": "articles",
+	"articles": [
+		{
+			"thumb": "https://wcharge.world/api/file/get/general/1687515286069.png?1687515286076",
+			"name": "Article test name",
+			"short": "Article Short Description",
+			"description": "Article Description",
+			"reference": "Article reference"
+		},
+		{
+			"thumb": "https://wcharge.world/api/file/get/general/1687515286069.png?1687515286076",
+			"name": "Article test name",
+			"short": "Article Short Description",
+			"description": "Article Description",
+			"reference": "Article reference"
+		},
+		{
+			"thumb": "https://wcharge.world/api/file/get/general/1687515286069.png?1687515286076",
+			"name": "Article test name",
+			"short": "Article Short Description",
+			"description": "Article Description",
+			"reference": "Article reference"
+		},
+		{
+			"thumb": "https://wcharge.world/api/file/get/general/1687515286069.png?1687515286076",
+			"name": "Article test name",
+			"short": "Article Short Description",
+			"description": "Article Description",
+			"reference": "Article reference"
+		}
+	]
+}

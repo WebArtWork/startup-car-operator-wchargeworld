@@ -1,0 +1,28 @@
+.wiki-acord {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+	&_top {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 40px;
+	    padding-right: 15px;
+	    padding-bottom: 40px;
+	    cursor: pointer;
+	    color: var(--c-main);
+	    transition: color 0.2s ease;
+	    &:hover {
+	    	color: var(--c-main-d);
+	    }
+	    &._active {
+	    	svg {
+	    		transform: rotate(180deg);
+	    	}
+	    }
+	}
+	&_body {
+		display: none;
+		padding-bottom: 20px;
+	}
+}
+.wiki-acord_top._active + .wiki-acord_body {
+	display: block;
+}
